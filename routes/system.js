@@ -3,7 +3,6 @@ const { getUptime, getTemperature, getStorage } = require('../helpers/system');
 var router = express.Router();
 
 router.get('/uptime', async (req, res) => {
-    console.log("uptime")
     const uptime = await getUptime();
     res.json({uptime: uptime})
 })

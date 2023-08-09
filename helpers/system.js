@@ -10,9 +10,14 @@ exports.getUptime = async function (){
     return executeCommand(temperatureCommand);
 }
 
- exports.getStorage = async function(){
-    const storageCommand = 'df -h --total | tail -1 | awk \'{print $4, $5}’';
+exports.getStorage = async function(){
+    const storageCommand = "df -h --total | tail -1 | awk '{print $4, $5}'";
     return executeCommand(storageCommand);
+}
+
+exports.getStatus = async function(service){
+    const serviceStatusCommand = `systemctl is-active ${service}`;
+    return executeCommand(serviceStatusCommand);
 }
 
 function executeCommand(command){
@@ -24,7 +29,7 @@ function executeCommand(command){
                         return;
                 }
                 console.log(stdout);
-                resolve({stdout: stdout.trim(),stderr});
+                resolve({stdout: stdout.trim(),stderr, command});
         });
 });
 }

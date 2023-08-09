@@ -1,5 +1,6 @@
 var express = require('express');
 const { getUptime, getTemperature, getStorage } = require('../helpers/system');
+const {getServiceStatus} = require('../helpers/serviceController');
 var router = express.Router();
 
 router.get('/uptime', async (req, res) => {
@@ -15,6 +16,11 @@ router.get('/temperature', async (req, res) => {
 router.get('/storage', async (req, res) => {
     const storage = await getStorage();
     res.json({storage: storage})
+})
+
+router.get('/status', async(req, res) => {
+    const serviceStatus = getServiceStatus();
+    res.json(serviceStatus);
 })
 
 module.exports = router;

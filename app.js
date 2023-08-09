@@ -20,6 +20,7 @@ app.set('views', 'views');
 // ROUTES
 app.use(require('./routes'));
 app.use(require('./routes/index'));
+app.use('/system',require('./routes/system'));
 
 
 module.exports = app;

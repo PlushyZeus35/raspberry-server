@@ -1,0 +1,20 @@
+#mainContainer,#serverDescription{
+    background-color: #14213d;
+}
+
+#serverDescription{
+    background: rgb(3,30,84);
+    background: linear-gradient(0deg, rgba(3,30,84,1) 63%, rgba(20,33,61,1) 86%);
+
+}
+
+#adminCard{
+    border: 2px solid #cbf3f0;
+}
+
+#avatarContainer{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+}

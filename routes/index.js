@@ -1,8 +1,9 @@
 var express = require('express');
+const { getUptime } = require('../helpers/system');
 var router = express.Router();
 
 /* GET Index page. */
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     res.render('index')
 })
 

@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path')
+const cors = require('cors');
 
 // INITIALIZATIONS
 const app = express();
@@ -14,6 +15,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 // MIDDLEWARES
+app.use(cors());
 
 // GLOBAL VARIABLES
 

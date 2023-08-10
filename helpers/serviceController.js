@@ -1,15 +1,15 @@
-const {getServiceStatus} = require('../helpers/system');
+const {getStatus} = require('../helpers/system');
 const services = ['apache2', 'qbittorrent', 'mariadb', 'pihole-FTL'];
 
 
-exports.getServiceStatus = function(){
+exports.getServiceStatus = async function(){
     let serviceStatusArr = [];
     let promises = [];
     for(let service of services){
-        let serviceStatus = getServiceStatus(service);
+        let serviceStatus = getStatus(service);
         promises.push(serviceStatus);
     }
-    Promise.all(promises).then(responses => {
+    return Promise.all(promises).then(responses => {
         for(let response of responses){
             serviceStatusArr.push({
                 service: response.command.split(' ')[response.command.split(' ').length-1],

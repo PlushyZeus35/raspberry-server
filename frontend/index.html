@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlushyServer</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="nav-container">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center align-items-center py-3">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./img/logo.png" width="40px" alt="Logo">
+                    <span class="fs-4 text-white ms-3">Plushy Server</span>
+                </a>
+                <ul class="nav nav-pills d-none d-md-flex">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="https://www.plushyzeus.com" class="nav-link">Sobre mí</a></li>
+                </ul>
+            </header>
+          </div>
+    </div>    
+    <div id="mainContainer">
+        <div class="row g-0">
+            <div class="col col-12 col-md-7 text-white mt-5 p-5">
+                <h1>Plushy Server</h1>
+                <h5>Control de mandos del servidor de PlushyZeus</h5>
+                <div id="servicesGnr" class="mt-5">
+                    <div class="row">
+                        <div class="col col-6 p-3 d-flex justify-content-center">
+                            <img src="./img/mariadb.png" width="70px" alt="">
+                        </div>
+                        <div class="col col-6 p-3 d-flex">
+                            <img src="./img/qbittorrent.png" width="70px" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-6 p-3 d-flex justify-content-center">
+                            <img src="./img/pihole.png" width="70px" alt="">
+                        </div>
+                        <div class="col col-6 p-3 d-flex">
+                            <img src="./img/node.png" width="70px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-5 text-white d-flex align-items-center justify-content-center">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                      <img src="./img/uptime.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                      <div id="uptimeData" class="d-flex gap-2 w-100 justify-content-between">
+                        <div id="uptimePlaceholder" class="placeholder-glow w-100">
+                            <span class="placeholder col-5"></span>
+                            <span class="placeholder col-10"></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                      <img src="./img/storage.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                      <div id="storageData" class="d-flex gap-2 w-100 justify-content-between">
+                        <div id="storagePlaceholder" class="placeholder-glow w-100">
+                            <span class="placeholder col-5"></span>
+                            <span class="placeholder col-10"></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                      <img src="./img/temperature.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                      <div id="temperatureData" class="d-flex gap-2 w-100 justify-content-between">
+                        <div id="temperaturePlaceholder" class="placeholder-glow w-100">
+                            <span class="placeholder col-5"></span>
+                            <span class="placeholder col-10"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+        <p class="col-md-4 mb-0 text-white">Made with &#128153; from Salamanca</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./img/logo.png" width="50px" alt="">
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><span class="nav-link px-2 text-white">v1.0</span></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

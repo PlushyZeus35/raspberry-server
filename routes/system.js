@@ -19,7 +19,7 @@ router.get('/storage', async (req, res) => {
 })
 
 router.get('/status', async(req, res) => {
-    const serviceStatus = getServiceStatus();
+    const serviceStatus = await getServiceStatus();
     res.json(serviceStatus);
 })
 

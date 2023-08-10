@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlushyServer</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <div id="nav-container">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center align-items-center py-3">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./img/logo.png" width="40px" alt="Logo">
+                    <span class="fs-4 text-white ms-3">Plushy Server</span>
+                </a>
+                <ul class="nav nav-pills d-none d-md-flex">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="https://www.plushyzeus.com" class="nav-link">Sobre mí</a></li>
+                </ul>
+            </header>
+          </div>
+    </div>
+
+    <div id="mainContainer">
+        <div class="container pt-3 pb-5">
+            <h2 class="text-white">Servicios</h2>
+            <hr class="text-white">
+            <div class="serviceList pb-3">
+                <div class="service text-white p-3">
+                    <div class="serviceInfo d-flex justify-content-between align-items-center">
+                        <div class="serviceData d-flex gap-4">
+                            <div class="serviceImg">
+                                <img width="70px" src="./img/apache2.png" alt="MariaDB Service Logo">
+                            </div>
+                            <div class="serviceText">
+                                <h5>Apache2</h5>
+                                <p class="d-none d-md-flex">Servidor web de código abierto y uno de los servidores web más populares y ampliamente utilizados en el mundo.</p>
+                            </div>
+                        </div>
+                        <div id="apacheLoader">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        
+                        <div id="apacheStatus" class="d-none serviceAccess d-flex flex-column gap-2">
+                            
+                        </div>
+                    </div>
+                    <div class="d-none serviceAlert p-3 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span><strong>ATENCIÓN: </strong><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></span>
+                    </div>
+                    
+                </div>
+
+                <div class="service text-white p-3">
+                    <div class="serviceInfo d-flex justify-content-between align-items-center">
+                        <div class="serviceData d-flex gap-4">
+                            <div class="serviceImg">
+                                <img width="70px" src="./img/qbittorrent.png" alt="MariaDB Service Logo">
+                            </div>
+                            <div class="serviceText">
+                                <h5>qbittorrent</h5>
+                                <p class="d-none d-md-flex">Cliente de torrent de código abierto y gratuito diseñado para descargar archivos a través del protocolo BitTorrent.</p>
+                            </div>
+                        </div>
+                        <div id="torrentLoader">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div id="torrentStatus" class="d-none serviceAccess d-flex flex-column gap-2">
+                            
+                        </div>
+                    </div>
+                    <div class="d-none serviceAlert p-3 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span><strong>ATENCIÓN: </strong><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></span>
+                    </div>
+                    
+                </div>
+
+                <div class="service text-white p-3">
+                    <div class="serviceInfo d-flex justify-content-between align-items-center">
+                        <div class="serviceData d-flex gap-4">
+                            <div class="serviceImg">
+                                <img width="70px" src="./img/mariadb.png" alt="MariaDB Service Logo">
+                            </div>
+                            <div class="serviceText">
+                                <h5>MariaDB</h5>
+                                <p class="d-none d-md-flex">Sistema de gestión de bases de datos relacionales (RDBMS) de código abierto.</p>
+                            </div>
+                        </div>
+                        <div id="mariadbLoader">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div id="mariadbStatus" class="serviceAccess d-flex flex-column gap-2 d-none">
+                        </div>
+                    </div>
+                    <div class="d-none serviceAlert p-3 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span><strong>ATENCIÓN: </strong><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></span>
+                    </div>
+                    
+                </div>
+
+                <div class="service text-white p-3">
+                    <div class="serviceInfo d-flex justify-content-between align-items-center">
+                        <div class="serviceData d-flex gap-4">
+                            <div class="serviceImg">
+                                <img width="70px" src="./img/pihole.png" alt="MariaDB Service Logo">
+                            </div>
+                            <div class="serviceText">
+                                <h5>PiHole</h5>
+                                <p class="d-none d-md-flex">Software de código abierto que actúa como un sistema de bloqueo de anuncios y rastreadores en la red local.</p>
+                            </div>
+                        </div>
+                        <div id="piholeLoader">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div id="piholeStatus" class="d-none serviceAccess d-flex flex-column gap-2">
+                            
+                        </div>
+                    </div>
+                    <div class="d-none serviceAlert p-3 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span><strong>ATENCIÓN: </strong><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+        <p class="col-md-4 mb-0 text-white">Made with &#128153; from Salamanca</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./img/logo.png" width="50px" alt="">
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><span class="nav-link px-2 text-white">v1.0</span></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./services.js"></script>
+</body>
+</html>

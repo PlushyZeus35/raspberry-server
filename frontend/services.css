@@ -1,0 +1,15 @@
+#mainContainer{
+    background-color: #14213d;
+}
+
+.service{
+    background-color: #032830;
+    color: #6edff6;
+    border: 1px solid #087990;
+}
+
+.serviceAlert{
+    background-color: #332701;
+    color: #ffda6a;
+    border: 1px solid #997404;
+}
